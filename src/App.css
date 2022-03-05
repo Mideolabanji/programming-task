@@ -7,8 +7,9 @@ body {
 }
 
 .app-body {
+  margin: auto;
   margin-top: 180px;
-  margin-left: 400px;
+  max-width: 700px;
 }
 
 h1 {
@@ -30,4 +31,34 @@ h1 {
 .headings a {
   text-decoration: none;
   color: #ea4335;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  box-shadow: 1px 2px rgb(0 0 0 / 30%);
+  padding: 1rem 1rem !important;
+}
+
+.required {
+  color: red;
+}
+
+.next-btn {
+  background: linear-gradient(to top, #ff6905, orange) !important;
+  padding: 10px 85px !important;
+  color: white !important;
+}
+
+.cancel-payment-link {
+  text-decoration: none;
+  color: #023372;
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 75px;
+  display: inline-block;
 }

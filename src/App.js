@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import FormInputs from "./FormInputs";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <a href="#">
             <h3>Confirm Payment</h3>
           </a>
-          <hr />
         </div>
+        <FormInputs />
       </div>
     </div>
   );

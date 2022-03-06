@@ -50,7 +50,7 @@ export default function Billing() {
         </div>
       </div>
       <footer>
-        <Link to="/next">
+        <Link to="/completed">
           <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
             Pay
           </button>

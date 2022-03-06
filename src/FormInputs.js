@@ -74,8 +74,9 @@ export default function FormInputs() {
             <select
               id="inputState"
               className="form-select form-select-lg select-input"
+              defaultValue
             >
-              <option selected>Lagos</option>
+              <option>Lagos</option>
               <option>...</option>
             </select>
           </div>

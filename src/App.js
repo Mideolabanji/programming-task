@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Next from "./Next";
+import Billing from "./Billing";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/next" element={<Next />} />
+        <Route path="/billing" element={<Billing />} />
       </Routes>
     </Router>
   );

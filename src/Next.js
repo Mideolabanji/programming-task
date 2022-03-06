@@ -76,7 +76,7 @@ export default function Next() {
           </div>
         </div>
         <footer>
-          <Link to="/next">
+          <Link to="/billing">
             <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
               Next
             </button>

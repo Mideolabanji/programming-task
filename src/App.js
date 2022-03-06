@@ -1,27 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import FormInputs from "./FormInputs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <div className="app-body">
-        <h1>Complete your Purchase</h1>
-        <div className="headings">
-          <a href="#">
-            <h3>Personal Info</h3>
-          </a>
-          <a href="#">
-            <h3>Billing Info</h3>
-          </a>
-          <a href="#">
-            <h3>Confirm Payment</h3>
-          </a>
-        </div>
-        <FormInputs />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={Home} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

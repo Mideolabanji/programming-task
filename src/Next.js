@@ -1,5 +1,10 @@
 import React from "react";
+import Heading from "./Heading";
 
 export default function Next() {
-  return "Next Page";
+  return (
+    <div className="app-body">
+      <Heading />
+    </div>
+  );
 }

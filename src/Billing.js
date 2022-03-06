@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "./Heading";
+import { Link } from "react-router-dom";
 
 export default function Billing() {
   return (
@@ -34,8 +35,35 @@ export default function Billing() {
             </div>
           </div>
           <hr />
+          <div className="row total-row mb-4">
+            <div className="col-8">
+              <ul className="total-ul">
+                <li>Total</li>
+              </ul>
+            </div>
+            <div className="col-4">
+              <ul className="right-ul total-ul">
+                <li className="data-fee">50,000.00</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <footer>
+        <Link to="/next">
+          <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
+            Pay
+          </button>
+        </Link>
+        <a href="#">
+          <button
+            type="button"
+            className="btn btn-link cancel-payment-link btn-lg mt-5"
+          >
+            Cancel Payment
+          </button>
+        </a>
+      </footer>
     </div>
   );
 }

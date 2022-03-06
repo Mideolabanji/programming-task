@@ -107,3 +107,15 @@ hr {
 hr:not([size]) {
   height: 1px;
 }
+
+.total-ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.total-row {
+  border: 1px solid #4d549e;
+  margin-left: 38px;
+  margin-right: 35px;
+  margin-top: 32px;
+}

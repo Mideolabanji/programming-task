@@ -122,7 +122,7 @@ hr:not([size]) {
 .completed-card {
   margin-top: 250px;
   width: 700px;
-  padding: 40px 90px 45px;
+  padding: 40px 115px 65px;
   opacity: 0.9;
   border-radius: 10px;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.14);
@@ -134,6 +134,10 @@ hr:not([size]) {
   margin-bottom: 40px;
 }
 
+.completed-card .text {
+  padding-right: 40px;
+}
+
 .completed-card p {
   margin-bottom: 40px;
 }
@@ -143,7 +147,12 @@ hr:not([size]) {
 }
 
 .completed-card .icon {
-  margin: 0 auto;
-  display: block;
-  color: white !important;
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  padding: 18px;
+  box-shadow: 0 8px 8px -1px rgb(64 60 67 / 12%);
+  margin-bottom: 10px;
 }

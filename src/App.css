@@ -1,7 +1,6 @@
 body {
   background: linear-gradient(165.5deg, #fff5cc, #fff5cc 85%, white 60%, white);
   font-family: "Poppins", sans-serif;
-  line-height: 1.4;
 }
 
 .app-body {
@@ -141,4 +140,10 @@ hr:not([size]) {
 
 .completed-card a {
   color: #ff6905;
+}
+
+.completed-card .icon {
+  margin: 0 auto;
+  display: block;
+  color: white !important;
 }

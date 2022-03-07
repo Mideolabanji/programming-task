@@ -119,3 +119,8 @@ hr:not([size]) {
   margin-right: 35px;
   margin-top: 32px;
 }
+
+.completed-card {
+  margin-top: 250px;
+  width: 700px;
+}

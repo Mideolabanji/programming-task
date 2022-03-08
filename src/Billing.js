@@ -55,7 +55,7 @@ export default function Billing() {
             Pay
           </button>
         </Link>
-        <a href="#">
+        <a href="/">
           <button
             type="button"
             className="btn btn-link cancel-payment-link btn-lg mt-5"

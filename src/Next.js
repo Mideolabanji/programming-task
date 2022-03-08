@@ -54,7 +54,7 @@ export default function Next() {
               Expiry Date <span className="required"> *</span>
             </label>
             <input
-              type="text"
+              type="number"
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
               placeholder="04 / 23"
@@ -81,7 +81,7 @@ export default function Next() {
               Next
             </button>
           </Link>
-          <a href="#">
+          <a href="/">
             <button
               type="button"
               className="btn btn-link cancel-payment-link btn-lg mt-5"

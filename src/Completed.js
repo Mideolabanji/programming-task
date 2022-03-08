@@ -14,7 +14,7 @@ export default function Completed() {
           <p className="card-text text">
             Please check your email for details concerning this transaction
           </p>
-          <a href="#" className="card-link">
+          <a href="/" className="card-link">
             Return Home
           </a>
         </div>

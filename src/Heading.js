@@ -5,9 +5,13 @@ export default function Heading() {
     <div>
       <h1>Complete your Purchase</h1>
       <div className="headings">
-        <h3>Personal Info</h3>
-        <h3>Billing Info</h3>
-        <h3>Confirm Payment</h3>
+        <ul>
+          <li className="active">Personal Info</li>
+          <li>Billing Info</li>
+          <li>Confirm Payment</li>
+        </ul>
+        <hr />
+        <hr className="second-hr" />
       </div>
     </div>
   );

@@ -1,12 +1,13 @@
 body {
-  background: linear-gradient(165.5deg, #fff5cc, #fff5cc 85%, white 60%, white);
+  background: linear-gradient(165.5deg, #fff5cc, #fff5cc 43%, white 0%, white);
   font-family: "Poppins", sans-serif;
 }
 
 .app-body {
   margin: auto;
-  margin-top: 180px;
+  margin-top: 170px;
   margin-bottom: 130px;
+  padding-left: 55px;
   max-width: 700px;
 }
 
@@ -17,18 +18,44 @@ h1 {
   margin-bottom: 50px;
 }
 
-.headings {
-  display: flex;
+.headings ul {
+  padding-left: 0;
+  font-size: 20px;
+  color: black;
+  margin-top: 0;
+  font-weight: 700;
 }
 
-.headings h3 {
-  margin-right: 60px;
-  font-size: 20px;
+.headings li {
+  display: inline;
+  padding-right: 73px;
+  opacity: 0.3;
 }
 
 .headings a {
   text-decoration: none;
-  color: #ea4335;
+}
+
+.headings .active {
+  color: #f48225;
+  opacity: 1;
+}
+
+.headings hr {
+  margin-left: 0;
+  margin-right: 0;
+  color: black;
+}
+
+.headings .second-hr {
+  color: #f48225;
+  margin-right: 480px;
+  margin-top: -5px;
+  border-radius: 10px;
+}
+
+.second-hr:not([size]) {
+  height: 10px;
 }
 
 label {
@@ -98,6 +125,7 @@ ul {
 
 hr {
   opacity: 1;
+  margin: 0;
   margin-left: 20px;
   margin-right: 20px;
   color: #4d549e;

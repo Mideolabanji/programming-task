@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 export default function FormInputs() {
   return (
@@ -83,11 +83,7 @@ export default function FormInputs() {
           </div>
         </div>
         <footer>
-          <Link to="/next">
-            <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
-              Next
-            </button>
-          </Link>
+          <Button />
           <a href="/">
             <button
               type="button"

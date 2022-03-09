@@ -1,12 +1,25 @@
-import React from "react";
-import Button from "./Button";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function FormInputs() {
   return (
     <div>
+      <h1>Complete your Purchase</h1>
+      <div className="headings">
+        <ul>
+          <li className="active">Personal Info</li>
+          <li>Billing Info</li>
+          <li>Confirm Payment</li>
+        </ul>
+        <hr />
+        <hr className="second-hr home-hr" />
+      </div>
       <form>
         <div className="mb-5 mt-5">
-          <label for="exampleFormControlTextarea1" className="form-label mb-3">
+          <label
+            htmlFor="exampleFormControlTextarea1"
+            className="form-label mb-3"
+          >
             Name
           </label>
           <input
@@ -17,7 +30,7 @@ export default function FormInputs() {
           />
         </div>
         <div className="mb-5">
-          <label for="exampleFormControlInput1" className="form-label mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label mb-3">
             Email address <span className="required"> *</span>
           </label>
           <input
@@ -25,11 +38,13 @@ export default function FormInputs() {
             className="form-control form-control-lg"
             id="exampleFormControlInput1"
             placeholder="OparaLinusAhmed@devmail.com"
-            required
           />
         </div>
         <div className="mb-5">
-          <label for="exampleFormControlTextarea1" className="form-label mb-3">
+          <label
+            htmlFor="exampleFormControlTextarea1"
+            className="form-label mb-3"
+          >
             Address 1
           </label>
           <div className="form-text mb-3">
@@ -43,7 +58,10 @@ export default function FormInputs() {
           />
         </div>
         <div className="mb-5">
-          <label for="exampleFormControlTextarea1" className="form-label mb-3">
+          <label
+            htmlFor="exampleFormControlTextarea1"
+            className="form-label mb-3"
+          >
             Address 2
           </label>
           <input
@@ -56,7 +74,7 @@ export default function FormInputs() {
         <div className="row">
           <div className="col-7">
             <label
-              for="exampleFormControlTextarea1"
+              htmlFor="exampleFormControlTextarea1"
               className="form-label mb-3"
             >
               Local Government
@@ -69,7 +87,7 @@ export default function FormInputs() {
             />
           </div>
           <div className="col-5">
-            <label for="inputState" className="form-label mb-3">
+            <label htmlFor="inputState" className="form-label mb-3">
               State
             </label>
             <select
@@ -83,7 +101,11 @@ export default function FormInputs() {
           </div>
         </div>
         <footer>
-          <Button />
+          <Link to="/next">
+            <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
+              Next
+            </button>
+          </Link>
           <a href="/">
             <button
               type="button"

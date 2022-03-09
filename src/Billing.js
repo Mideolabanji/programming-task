@@ -1,11 +1,19 @@
 import React from "react";
-import Heading from "./Heading";
 import { Link } from "react-router-dom";
 
 export default function Billing() {
   return (
     <div className="app-body">
-      <Heading />
+      <h1>Complete your Purchase</h1>
+      <div className="headings">
+        <ul>
+          <li>Personal Info</li>
+          <li className="active">Billing Info</li>
+          <li>Confirm Payment</li>
+        </ul>
+        <hr />
+        <hr className="second-hr next-hr" />
+      </div>
       <div className="card mt-5 card">
         <div className="card-header header-card">
           <div className="row">

@@ -1,14 +1,25 @@
 import React from "react";
-import Heading from "./Heading";
 import { Link } from "react-router-dom";
 
 export default function Next() {
   return (
     <div className="app-body">
-      <Heading />
+      <h1>Complete your Purchase</h1>
+      <div className="headings">
+        <ul>
+          <li>Personal Info</li>
+          <li className="active">Billing Info</li>
+          <li>Confirm Payment</li>
+        </ul>
+        <hr />
+        <hr className="second-hr next-hr" />
+      </div>
       <form>
         <div className="mb-5 mt-5">
-          <label for="exampleFormControlTextarea1" className="form-label mb-3">
+          <label
+            htmlFor="exampleFormControlTextarea1"
+            className="form-label mb-3"
+          >
             Name on Card <span className="required"> *</span>
           </label>
           <input
@@ -19,7 +30,7 @@ export default function Next() {
           />
         </div>
         <div className="mb-5">
-          <label for="inputState" className="form-label mb-3">
+          <label htmlFor="inputState" className="form-label mb-3">
             Card Type <span className="required"> *</span>
           </label>
           <select
@@ -34,7 +45,7 @@ export default function Next() {
         <div className="row">
           <div className="col-6">
             <label
-              for="exampleFormControlTextarea1"
+              htmlFor="exampleFormControlTextarea1"
               className="form-label mb-3"
             >
               Card Details <span className="required"> *</span>
@@ -48,7 +59,7 @@ export default function Next() {
           </div>
           <div className="col-4">
             <label
-              for="exampleFormControlTextarea1"
+              htmlFor="exampleFormControlTextarea1"
               className="form-label mb-3"
             >
               Expiry Date <span className="required"> *</span>
@@ -62,7 +73,7 @@ export default function Next() {
           </div>
           <div className="col-2">
             <label
-              for="exampleFormControlTextarea1"
+              htmlFor="exampleFormControlTextarea1"
               className="form-label mb-3"
             >
               CVV <span className="required"> *</span>

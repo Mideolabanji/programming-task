@@ -21,9 +21,9 @@ h1 {
 .headings ul {
   padding-left: 0;
   font-size: 20px;
-  color: black;
   margin-top: 0;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .headings li {
@@ -49,13 +49,21 @@ h1 {
 
 .headings .second-hr {
   color: #f48225;
-  margin-right: 480px;
-  margin-top: -5px;
   border-radius: 10px;
+  margin-top: -5px;
 }
 
 .second-hr:not([size]) {
   height: 10px;
+}
+
+.headings .home-hr {
+  margin-right: 480px;
+}
+
+.headings .next-hr {
+  margin-right: 300px;
+  margin-left: 180px;
 }
 
 label {

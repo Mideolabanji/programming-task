@@ -84,6 +84,7 @@ input,
 
 .next-btn {
   background: linear-gradient(to top, #ff6905, orange) !important;
+  border: 2px solid #ff6905 !important;
   padding: 10px 85px !important;
   color: white !important;
 }

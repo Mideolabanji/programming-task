@@ -1,7 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { useForm } from "react-hook-form";
 
 export default function FormInputs() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  function onSubmit(data) {
+    console.log(data);
+  }
+  console.log(errors);
+
   return (
     <div>
       <h1>Complete your Purchase</h1>
@@ -14,7 +25,7 @@ export default function FormInputs() {
         <hr />
         <hr className="second-hr home-hr" />
       </div>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-5 mt-5">
           <label
             htmlFor="exampleFormControlTextarea1"
@@ -24,6 +35,7 @@ export default function FormInputs() {
           </label>
           <input
             type="text"
+            name="name"
             className="form-control form-control-lg"
             id="exampleFormControlTextarea1"
             placeholder="Opara Linus Ahmed"
@@ -35,11 +47,14 @@ export default function FormInputs() {
           </label>
           <input
             type="email"
+            name="email"
             className="form-control form-control-lg"
             id="exampleFormControlInput1"
             placeholder="OparaLinusAhmed@devmail.com"
+            {...register("email", { required: "Please include your email" })}
           />
         </div>
+        <p></p>
         <div className="mb-5">
           <label
             htmlFor="exampleFormControlTextarea1"
@@ -52,6 +67,7 @@ export default function FormInputs() {
           </div>
           <input
             type="text"
+            name="address 1"
             className="form-control form-control-lg"
             id="exampleFormControlTextarea1"
             placeholder="The address of the user goes here"
@@ -66,6 +82,7 @@ export default function FormInputs() {
           </label>
           <input
             type="text"
+            name="address 2"
             className="form-control form-control-lg"
             id="exampleFormControlTextarea1"
             placeholder="and here"
@@ -81,6 +98,7 @@ export default function FormInputs() {
             </label>
             <input
               type="text"
+              name="local government"
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
               placeholder="Surulere"
@@ -101,11 +119,13 @@ export default function FormInputs() {
           </div>
         </div>
         <footer>
-          <Link to="/next">
-            <button type="submit" className="btn btn-lg mt-5 ms-2 next-btn">
-              Next
-            </button>
-          </Link>
+          <a href="/next">
+            <input
+              type="submit"
+              className="btn btn-lg mt-5 ms-2 next-btn"
+              value="Next"
+            />
+          </a>
           <a href="/">
             <button
               type="button"

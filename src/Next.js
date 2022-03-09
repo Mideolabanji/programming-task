@@ -24,6 +24,7 @@ export default function Next() {
           </label>
           <input
             type="text"
+            name="name on card"
             className="form-control form-control-lg"
             id="exampleFormControlTextarea1"
             placeholder="Opara Linus Ahmed"
@@ -35,6 +36,7 @@ export default function Next() {
           </label>
           <select
             id="inputState"
+            name="card type"
             className="form-select form-select-lg select-input"
             defaultValue
           >
@@ -51,7 +53,8 @@ export default function Next() {
               Card Details <span className="required"> *</span>
             </label>
             <input
-              type="text"
+              type="number"
+              name="card details"
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
               placeholder="44960 44960 44960 44960"
@@ -66,6 +69,7 @@ export default function Next() {
             </label>
             <input
               type="number"
+              name="expiry date"
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
               placeholder="04 / 23"
@@ -79,7 +83,8 @@ export default function Next() {
               CVV <span className="required"> *</span>
             </label>
             <input
-              type="text"
+              type="number"
+              name="cvv"
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
               placeholder="923"

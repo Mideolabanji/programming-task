@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function FormInputs() {
@@ -7,10 +7,13 @@ export default function FormInputs() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const [error, setError] = useState("");
 
   function onSubmit(data) {
     console.log(data);
+    setError(errors.email.message);
   }
+
   console.log(errors);
 
   return (
@@ -54,7 +57,7 @@ export default function FormInputs() {
             {...register("email", { required: "Please include your email" })}
           />
         </div>
-        <p></p>
+        <h6>{error}</h6>
         <div className="mb-5">
           <label
             htmlFor="exampleFormControlTextarea1"

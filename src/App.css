@@ -194,3 +194,9 @@ hr:not([size]) {
   box-shadow: 0 8px 8px -1px rgb(64 60 67 / 12%);
   margin-bottom: 10px;
 }
+
+.error-message {
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 500;
+}

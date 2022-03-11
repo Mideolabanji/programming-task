@@ -135,7 +135,7 @@ export default function FormInputs() {
                 disabled={!isValid}
                 type="button"
                 className="btn btn-lg mt-5 ms-2 next-btn"
-                onSubmit={updateFormStep}
+                onClick={updateFormStep}
               >
                 Next
               </button>

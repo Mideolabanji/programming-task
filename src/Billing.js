@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Billing() {
   return (
-    <div className="app-body">
+    <div className="billing app-body">
       <h1>Complete your Purchase</h1>
       <div className="headings">
         <ul>
